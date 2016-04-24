@@ -1,0 +1,25 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+
+let array = ["Pepe", "Juan", "Nicolas", "Maria"]
+
+var nombres = [String]()
+
+    
+    repeat{
+        var randomIndex = Int(arc4random_uniform(UInt32(array.count)))
+        if (nombres.contains(array[randomIndex]) == false)
+        {
+            nombres.append(array[randomIndex])
+        }
+        
+    } while(nombres.count<array.count)
+    
+    
+    
+    
+
+
+nombres
